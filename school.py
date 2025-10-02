@@ -7,8 +7,10 @@ class School:
     
     def add_classroom(self,classroom):
         self.classrooms[classroom.name]=classroom
+        
     def add_teacher(self,subject,teacher):
         self.teachers[subject]=teacher
+        
     def student_admission(self,student):
         classname=student.classroom.name
         self.classrooms[classname].add_student(student)
@@ -82,6 +84,7 @@ class School:
             for sub in value.subjects:
                 subject +=f"{sub.name}\n"
         print(subject)
+        
         # All Teachers-Homework
         # All Student Results
         print("Students Results")
