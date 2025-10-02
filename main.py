@@ -20,21 +20,25 @@ karim=Student("Karim", nine)
 fahim=Student("Fahim", ten)
 hamim=Student("Hamim", ten)
 
+
 school.student_admission(rahim)
 school.student_admission(karim)
 school.student_admission(fahim)
 school.student_admission(hamim)
+
 
 # Adding Teachers
 abul=Teacher("Abul Khan")
 babul=Teacher("Babul Khan")
 kabul=Teacher("Kabul Khan")
 
+
 # Adding Subjects
 bangla=Subject("Bangla", abul)
 physics=Subject("Physics", babul)
 chemistry=Subject("Chemistry", kabul)
 biology=Subject("Biology", kabul)
+
 
 eight.add_subject(bangla)
 eight.add_subject(physics)
@@ -46,6 +50,7 @@ ten.add_subject(chemistry)
 ten.add_subject(physics)
 ten.add_subject(bangla)
 ten.add_subject(biology)
+
 
 eight.take_semester_final_exam()
 nine.take_semester_final_exam()
