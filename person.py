@@ -3,7 +3,8 @@ from school import School
 class Person:
     def __init__(self,name)->None:
         self.name=name
-        
+
+
 class Teacher(Person):
     def __init__(self,name)->None:
         super().__init__(name)
@@ -31,6 +32,7 @@ class Student(Person):
             gpa=sum/len(self.subject_grade) # 7/2 = 3.50
             self.grade=School.value_to_grade(gpa)
         return f"{self.name} Final Grade:{self.grade} with GPA={gpa}"
+        
     # rahim.id == 
     # rahim.id = 12
     @property
