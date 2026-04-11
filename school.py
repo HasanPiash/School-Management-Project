@@ -4,16 +4,20 @@ class School:
         self.address=address
         self.teachers={} # {"bangla" : teacher_object}
         self.classrooms={} # {"eight" : classroom_object}
-     
+
+    
     def add_classroom(self,classroom):
         self.classrooms[classroom.name]=classroom
-        
+
+    
     def add_teacher(self,subject,teacher):
         self.teachers[subject]=teacher
-        
+
+    
     def student_admission(self,student):
         classname=student.classroom.name
         self.classrooms[classname].add_student(student)
+
     
     # rahim - bang - 50 - B - 2.00
     #       - eng  - 80 - A+ - 5.00
@@ -47,6 +51,7 @@ class School:
             'F':0.00
         }
         return grade_map[grade]
+
     
     @staticmethod
     def value_to_grade(value):
@@ -64,6 +69,7 @@ class School:
             return 'D'
         else:
             return 'F'
+
     
     def __repr__(self):
         # All Classrooms
@@ -84,7 +90,8 @@ class School:
             for sub in value.subjects:
                 subject +=f"{sub.name}\n"
         print(subject)
-        
+
+            
         # All Teachers-Homework
         # All Student Results
         print("Students Results")
