@@ -10,10 +10,12 @@ eight=ClassRoom("Eight")
 nine=ClassRoom("Nine")
 ten=ClassRoom("Ten")
 
+   
 school.add_classroom(eight)
 school.add_classroom(nine)
 school.add_classroom(ten)
 
+   
 # Adding Student
 rahim=Student("Rahim", eight)
 karim=Student("Karim", nine)
@@ -51,6 +53,8 @@ ten.add_subject(physics)
 ten.add_subject(bangla)
 ten.add_subject(biology)
 
+
+  
 
 eight.take_semester_final_exam()
 nine.take_semester_final_exam()
