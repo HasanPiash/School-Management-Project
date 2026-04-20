@@ -2,9 +2,9 @@ from school import School
 from person import Student, Teacher
 from subject import Subject
 from classroom import ClassRoom
- 
+     
 school=School("ABC", "Dhaka")
-
+   
 # Adding Classroom
 eight=ClassRoom("Eight")
 nine=ClassRoom("Nine")
@@ -53,8 +53,6 @@ ten.add_subject(physics)
 ten.add_subject(bangla)
 ten.add_subject(biology)
 
-
-  
 
 eight.take_semester_final_exam()
 nine.take_semester_final_exam()
