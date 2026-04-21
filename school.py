@@ -5,11 +5,11 @@ class School:
         self.teachers={} # {"bangla" : teacher_object}
         self.classrooms={} # {"eight" : classroom_object}
 
-    
+     
     def add_classroom(self,classroom):
         self.classrooms[classroom.name]=classroom
 
-    
+     
     def add_teacher(self,subject,teacher):
         self.teachers[subject]=teacher
 
