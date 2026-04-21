@@ -4,12 +4,12 @@ class ClassRoom:
         self.students=[] # list of student objects
         self.subjects=[] # list of subject objects
 
-    
+     
     def add_student(self, student): # rahim, eight e vorti hobe. 
         roll_no=f"{self.name}-{len(self.students)+1}" # eight-2
         student.id=roll_no
         self.students.append(student)
-
+ 
        
     def add_subject(self, subject):
         self.subjects.append(subject)
